@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+% Edited by Brody Soedel for personal resume use
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{ulem}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Brody Soedel} \\ \vspace{1pt}
+    \small 425-435-1066 $|$ 
+      \href{mailto:brody.soedel@gmail.com}{\uline{brody.soedel@gmail.com}} $|$
+      \href{https://github.com/bsoedel}{GitHub: \uline{bsoedel}} $|$
+      \href{www.linkedin.com/in/brody-soedel}{LinkedIn: \uline{brody-soedel}}
+\end{center}
+
+
+
+
+-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{KSP App} $|$ \emph{Python}}{June 2023 -- July 2023}
+          \resumeItemListStart
+            \resumeItem{Developed an app to provide utility for solving complex math and physics-based problems
+             in Kerbal Space Program, a space simulation game}
+            \resumeItem{Developed custom data structure for reading game files}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, HTML/CSS, C++, Bash, LaTeX} \\
+     \textbf{Developer Tools}{: VS Code, Docker, GitHub} \\
+     \textbf{Libraries}{: NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {University of Washington Bothell}{Bothell, WA}
+  {Majoring in Computer Science and Software Engineering}
+  {2023 - projected 2024}
+\resumeSubHeadingListEnd
+{Current courses:}
+\resumeItemListStart
+\resumeItem{Data Structures and Algorithms I}
+\resumeItem{Technical Writing for Computer Professionals}
+\resumeItem{Software Engineering}
+\resumeItemListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington Seattle}{Seattle, WA}
+      {Majoring in History}{2020 - 2023}
+  \resumeSubHeadingListEnd
+  \resumeItemListStart
+    \resumeItem{General GPA : 3.48}
+    \resumeItem{Dean's List Spring 2021, Winter - Summer 2022}
+    \resumeItem{Computer Programming I \& II, Data Programming, CS GPA: 3.85}
+  \resumeItemListEnd
+
+
+%-------Miscellaneous Honours---------------
+\section{Leadership}
+    \resumeSubHeadingListStart
+        \resumeSubSubheading{Captain of Highschool Swim Team}{2018 - 2020}
+          \resumeItemListStart
+            \resumeItem{Captained a highschool swim team
+            by organizing team activities, recruiting new members, and assisting
+             coaches to help lead team to new found success}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%---------Work History------------%
+\section{Work History}
+\resumeSubHeadingListStart
+  \resumeSubheading{Produce Department}{Cottage Lake, WA}{Safeway}{June 2023 - August 2023}
+\resumeSubHeadingListEnd
+\resumeItemListStart
+ \resumeItem
+ {
+  Produced over a hundred fresh cut fruit products daily by timely cross referencing 
+  a daily production list to fulfill store demand
+ }
+ \resumeItem
+ {
+  Assembled varied recipes by maintaining working knowledge of each and optimizing
+  speed of production to meet production quota
+ }
+ \resumeItem
+ {
+  Closed for produce kitchen daily by cleaning dishes, floors, and surfaces, 
+  in compliance with both company policy and food safety law
+ }
+ \resumeItem
+ {
+  Worked with a team by allocating collective efforts to help accomplish production
+  goals and other tasks related to our department
+ }
+\resumeItemListEnd
+
+%-------Professional Summary---------------
+\section{Professional Summary}
+{Junior at UW Bothell majoring in computer science and software engineering. Former
+history major who transferred campuses in order to pursue computer science after
+excelling and loving courses at UW Seattle. Prior major has imparted strong analytical skills 
+and wider understanding of world. Diligent and dedicated former competitive swimmer, 
+critical thinker, and a quick learner with a friendly demeanor. Adaptable candidate
+looking to gain experience in software development and professional connections.}
+\end{document}
